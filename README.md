@@ -1,6 +1,6 @@
 # AWS_VPC — Terraform
 
-Provisions a small AWS environment with Terraform: a VPC with public and private subnets, networking (IGW, NAT Gateway, route tables, NACLs, security groups), and two EC2 instances (Windows in the public subnet, Linux in the private subnet) with SSH/RDP access and a Reachability Analyzer connectivity test.
+A small AWS environment with Terraform: a VPC with public and private subnets, networking (IGW, NAT Gateway, route tables, NACLs, security groups), and two EC2 instances (Windows in the public subnet, Linux in the private subnet) with SSH/RDP access and a Reachability Analyzer connectivity test.
 
 ## Architecture
 
@@ -57,6 +57,3 @@ dot -Tsvg vpc.dot -o vpc.svg   # requires Graphviz
 ## Notes
 
 - **NAT Gateway and Elastic IPs incur hourly costs** — run `terraform destroy` when you're done experimenting.
-
-
-  If `terraform.tfstate` has already been committed, rotate the key pair and Windows credentials, then remove it from history (e.g. `git rm --cached terraform.tfstate*`).
