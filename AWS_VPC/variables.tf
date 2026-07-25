@@ -47,7 +47,7 @@ variable "linux-ami" {
 }
 variable "my_ip" {
     type = string
-    default = "24.155.64.208/32"
+   
   
 }
 
