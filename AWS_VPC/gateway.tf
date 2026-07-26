@@ -4,12 +4,10 @@ resource "aws_internet_gateway" "igw" {
       Name="IGW-${random_pet.pavan_pet.id}"
     }
 }
-
 resource "aws_nat_gateway" "nat_gw" {
     subnet_id = aws_subnet.public_subnet.id
     allocation_id = aws_eip.nat_eip.id
      tags = {
       Name="NAT-${random_pet.pavan_pet.id}"
     }
-  
 }
