@@ -55,4 +55,5 @@ dot -Tsvg vpc.dot -o vpc.svg   # requires Graphviz
 ```
 
 ## Notes
+
 - **NAT Gateway and Elastic IPs incur hourly costs** — run `terraform destroy` when you're done experimenting.
