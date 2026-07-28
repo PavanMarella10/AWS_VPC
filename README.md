@@ -1,5 +1,4 @@
 # AWS_VPC — Terraform
-
 A small AWS environment with Terraform: a VPC with public and private subnets, networking (IGW, NAT Gateway, route tables, NACLs, security groups), and two EC2 instances (Windows in the public subnet, Linux in the private subnet) with SSH/RDP access and a Reachability Analyzer connectivity test.
 
 ## Architecture
