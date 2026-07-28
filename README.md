@@ -8,6 +8,7 @@ A small AWS environment with Terraform: a VPC with public and private subnets, n
 - **Public subnet** → Internet Gateway (Windows instance, publicly reachable via RDP)
 - **Private subnet** → NAT Gateway for outbound access (Linux instance, no public IP)
 - **Reachability Analyzer** verifies connectivity from the Windows instance to the Linux instance
+  
 ## Files
 
 | File | Purpose |
